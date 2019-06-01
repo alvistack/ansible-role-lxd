@@ -18,7 +18,6 @@
   remote_user: root
   become: true
   roles:
-    - role: bootstrap
     - role: snapd
     - role: lxd
 
@@ -26,7 +25,9 @@
   remote_user: root
   become: true
   tasks:
-    - name: lxd --version
-      command: lxd --version
+    - name: su -l -s /bin/bash -c "lxd --version"
+      command: su -l -s /bin/bash -c "lxd --version"
+      args:
+        warn: false
       register: result
       changed_when: result is not succeeded
