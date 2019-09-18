@@ -52,5 +52,5 @@
   snap:
     name: "{{ item.name }}"
     state: "{{ item.state }}"
-  loop: "{{ snap }}"
+  loop: "{{ _snap }}"
   tags: snapd
