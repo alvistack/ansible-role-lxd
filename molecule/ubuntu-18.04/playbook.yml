@@ -25,9 +25,7 @@
   remote_user: root
   become: true
   tasks:
-    - name: su -l -s /bin/bash -c "lxd --version"
-      command: su -l -s /bin/bash -c "lxd --version"
-      args:
-        warn: false
+    - name: lxd --version
+      command: lxd --version
       register: result
       changed_when: result is not succeeded
