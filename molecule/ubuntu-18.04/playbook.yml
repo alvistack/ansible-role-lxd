@@ -20,12 +20,3 @@
   roles:
     - role: snapd
     - role: lxd
-
-- hosts: all
-  remote_user: root
-  become: true
-  tasks:
-    - name: lxd --version
-      command: lxd --version
-      register: result
-      changed_when: result is not succeeded
