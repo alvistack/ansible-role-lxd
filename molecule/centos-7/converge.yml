@@ -17,6 +17,9 @@
 - hosts: all
   remote_user: root
   become: true
-  roles:
-    - role: snapd
-    - role: lxd
+  tasks:
+    - include_role:
+        name: snapd
+
+    - include_role:
+        name: lxd
