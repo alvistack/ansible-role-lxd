@@ -1,6 +1,6 @@
 # Ansible Role for LXD
 
-[![Travis](https://img.shields.io/travis/alvistack/ansible-role-lxd.svg)](https://travis-ci.org/alvistack/ansible-role-lxd)
+[![Travis](https://img.shields.io/travis/com/alvistack/ansible-role-lxd.svg)](https://travis-ci.com/alvistack/ansible-role-lxd)
 [![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-lxd.svg)](https://github.com/alvistack/ansible-role-lxd)
 [![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-lxd.svg)](https://github.com/alvistack/ansible-role-lxd/blob/master/LICENSE)
 [![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.lxd-blue.svg)](https://galaxy.ansible.com/alvistack/lxd)
