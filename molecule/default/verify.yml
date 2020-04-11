@@ -18,7 +18,7 @@
   remote_user: root
   become: true
   tasks:
-    - name: /var/lib/snapd/snap/bin/lxd --version
-      command: /var/lib/snapd/snap/bin/lxd --version
+    - name: /snap/bin/lxd --version
+      command: /snap/bin/lxd --version
       register: result
       changed_when: result is not succeeded
