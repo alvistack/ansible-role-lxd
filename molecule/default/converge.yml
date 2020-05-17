@@ -20,6 +20,8 @@
   tasks:
     - include_role:
         name: snapd
+      tags: snapd
 
     - include_role:
         name: lxd
+      tags: lxd
